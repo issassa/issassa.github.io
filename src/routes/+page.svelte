@@ -1,42 +1,34 @@
+<script>
+  import CartaMagic from '$lib/components/CartaMagic.svelte';
+  import { cards } from '$lib/data.js';
+  import { goto } from '$app/navigation'
+
+</script>
+<div class="botões">
+<button onclick={goto('/sobre')} class="rounded-circle"><img src="favicon.png" width="200px" class="rounded-circle"></button> oiiii
+<button onclick={goto('/sobre')} class="rounded-circle"><img src="favicon.png" width="200px" class="rounded-circle"></button> oiiii
+<button onclick={goto('/sobre')} class="rounded-circle"><img src="favicon.png" width="200px" class="rounded-circle"></button> oiiii
+<button onclick={goto('/sobre')} class="rounded-circle"><img src="favicon.png" width="200px" class="rounded-circle"></button> 
+</div>
+ 
+<div class="row g-4">
+  {#each cards as card}
+    <div class="col">
+      <CartaMagic {...card} />
+    </div>
+  {/each}
+</div>
+
 <h1>oii</h1>
 <p>aaa</p>
 <a href="/sobre">sobre</a>
 
-<div class="row row-cols-1 row-cols-md-3 g-4">
-    <div class="col">
-      <div class="card h-100">
-        <img src="favicon.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="favicon.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a short card.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="favicon.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="favicon.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        </div>
-      </div>
-    </div>
-  </div>
+<style>
+  .botões {
+text-align: center;
+color: aliceblue;
+  }
+</style>
+
+
+
