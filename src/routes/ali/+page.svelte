@@ -23,18 +23,13 @@
 </script>
 
 
-<nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
-	<div class="container-fluid">
-		<a class="navbar-brand" href=".">
-			<img
-				src="/docs/5.3/assets/brand/bootstrap-logo.svg"
-				alt=""
-				width="30"
-				height="24"
-				class="d-inline-block align-text-top"
-			/>
-			<b>BiblioBella</b>
-		</a>
+<div class="barra">
+	<nav class="navbar bg-body-tertiary">
+		<div class="container-fluid">
+			<a class="navbar-brand" href=".">
+				<img src="book.svg" alt="." width="30" height="24" class="d-inline-block align-text-top" />
+				<b>BlogBook</b>
+			</a>
 		<nav class="navbar navbar-expand-lg bg-body-tertiary">
 			<div class="container-fluid">
 				<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -42,7 +37,7 @@
 						<input
 							class="btn btn-dark"
 							type="Search"
-							placeholder="nome do livro.."
+							placeholder="livro.."
 							aria-label="Search"
                             bind:value={busca}
                             oninput={filtrar}
@@ -52,24 +47,25 @@
 			</div>
 		</nav>
 	</div>
-</nav>
+	</div>
 <br />
 <br />
 <div class=" d-flex justify-content-center">
-	<div class="card mb-3" style="max-width: 540px;">
+	<div class="card mb-3" style="max-width: 850px;">
 		<div class="row g-0">
-			<div class="col-md-4">
-				<img src="favicon.png" class="img-fluid rounded-start" alt="..." />
+			<div class="col-md-6">
+				<img src="ali.png" class="img-fluid rounded-start" alt="..." />
 			</div>
-			<div class="col-md-8">
+			<div class="col-md-6">
 				<div class="card-body">
-					<h5 class="card-title"><b>Sarah Adams</b></h5>
-                    <h7 class="card-title"><b>@authorsarahadams</b></h7>
+					<h5 class="card-title"><b>Ali Hazelwood</b></h5>
+                    <h7 class="card-title"><b>@alihazelwood</b></h7>
                     <br>
                     <br>
 					<p class="card-text">
-						Nascida e criada em Nashville TN, Sarah Adams ama sua família, dias quentes e fazer as pessoas sorrirem.
-                        <p>Sarah sonha em ser escritora desde menina, mas finalmente escreveu seu primeiro romance quando suas filhas estavam cochilando e ela não tinha mais desculpas para adiar.
+						Ali Hazelwood é uma escritora e neurocientista italiana que tem vindo a conquistar um lugar de destaque no que à ficção romântica diz respeito.
+                        Cresceu na Itália e viveu no Japão e na Alemanha antes de se estabilizar nos Estados Unidos para se doutorar em Neurociência.
+						<p>Autora de diveros livros famosos como "A Hipótese do Amor", "A Razão do Amor", "A Teoria do Amor", entre outros fenômenos de ficção romântica.
 					</p>
 				</div>
 			</div>
@@ -95,11 +91,11 @@
 	
 </div>
 
-<p>sarah</p>
+<p>ali</p>
 
 <style>
 	.haipados {
 		text-align: center;
-		color: rgb(137, 40, 228);
+		color: rgb(0, 0, 0);
 	}
 </style>

@@ -23,18 +23,13 @@
 </script>
 
 
-<nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
-	<div class="container-fluid">
-		<a class="navbar-brand" href=".">
-			<img
-				src="/docs/5.3/assets/brand/bootstrap-logo.svg"
-				alt=""
-				width="30"
-				height="24"
-				class="d-inline-block align-text-top"
-			/>
-			<b>BiblioBella</b>
-		</a>
+<div class="barra">
+	<nav class="navbar bg-body-tertiary">
+		<div class="container-fluid">
+			<a class="navbar-brand" href=".">
+				<img src="book.svg" alt="." width="30" height="24" class="d-inline-block align-text-top" />
+				<b>BlogBook</b>
+			</a>
 		<nav class="navbar navbar-expand-lg bg-body-tertiary">
 			<div class="container-fluid">
 				<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -42,7 +37,7 @@
 						<input
 							class="btn btn-dark"
 							type="Search"
-							placeholder="nome do livro.."
+							placeholder="livro.."
 							aria-label="Search"
                             bind:value={busca}
                             oninput={filtrar}
@@ -52,16 +47,16 @@
 			</div>
 		</nav>
 	</div>
-</nav>
+	</div>
 <br />
 <br />
 <div class=" d-flex justify-content-center">
-	<div class="card mb-3" style="max-width: 540px;">
+	<div class="card mb-3" style="max-width: 700px;">
 		<div class="row g-0">
-			<div class="col-md-4">
-				<img src="favicon.png" class="img-fluid rounded-start" alt="..." />
+			<div class="col-md-6">
+				<img src="sarah.png" class="img-fluid rounded-start" alt="..." width="600px" height="990px" />
 			</div>
-			<div class="col-md-8">
+			<div class="col-md-6">
 				<div class="card-body">
 					<h5 class="card-title"><b>Sarah Adams</b></h5>
                     <h7 class="card-title"><b>@authorsarahadams</b></h7>
@@ -100,6 +95,6 @@
 <style>
 	.haipados {
 		text-align: center;
-		color: rgb(137, 40, 228);
+		color: rgb(0, 0, 0);
 	}
 </style>
