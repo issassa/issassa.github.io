@@ -51,7 +51,7 @@
 	</nav>
 </div>
 <div class="mb-3">
-	<img src="fotocapaofcl.png" class="banner" alt="..." />
+	<img src="fotocapaofc.png" class="banner" alt="..." />
 </div>
 <br />
 <br />
