@@ -149,13 +149,6 @@
 		{/each}
 	</div>
 </div>
-<svelte:head>
-	<style>
-		body {
-			background-color: #f2d6f7;
-		}
-	</style>
-</svelte:head>
 
 <style>
 	.livropreferido {
@@ -185,3 +178,11 @@
 		margin-right: auto;
 	}
 </style>
+<svelte:head>
+	<style>
+		body {
+			background-color: #f2d6f7;
+		}
+	</style>
+</svelte:head>
+
