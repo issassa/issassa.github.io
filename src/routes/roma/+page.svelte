@@ -1,27 +1,3 @@
-<script>
-	import { livros } from '$lib/sarah.js';
-	import Page from '../+page.svelte';
-
-	let filtrados = $state(livros.slice());
-	let busca = $state('');
-
-	function filtrar(event) {
-		if (busca.length == 0) {
-			filtrados = livros.slice();
-		} else {
-			filtrados = [];
-			for (const livro of livros) {
-				if (livro.gêneros.includes(busca.toLocaleLowerCase())) {
-					filtrados.push(livro);
-				}
-				if (livro.nome.toLowerCase().includes(busca.toLocaleLowerCase())) {
-					filtrados.push(livro);
-				}
-			}
-		}
-	}
-</script>
-
 <div class="barra">
 	<nav class="navbar" style="background-color: #cf6c36;">
 		<div class="container-fluid">
